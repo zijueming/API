@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>时空对话——秦朝丞相李斯</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="layout">
+        <div class="left-panel">
+          <div class="avatar" id="avatar">
+            <div class="avatar-media">
+              <video
+                id="avatar-video-idle"
+                class="avatar-video"
+                src="/video/pingshi.mp4"
+                muted
+                loop
+                autoplay
+                playsinline
+                preload="auto"
+              ></video>
+              <video
+                id="avatar-video-talk"
+                class="avatar-video"
+                src="/video/shuohua.mp4"
+                muted
+                loop
+                playsinline
+                preload="auto"
+              ></video>
+              <div class="face fallback-face">
+                <div class="eyes">
+                  <span class="eye left"></span>
+                  <span class="eye right"></span>
+                </div>
+                <div class="mouth" data-fallback="true"></div>
+                <div class="cheeks">
+                  <span class="cheek left"></span>
+                  <span class="cheek right"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="chat-header">
+            <h1 class="teacher-name">时空对话——秦朝丞相李斯</h1>
+          </div>
+          <div class="chat-wrapper">
+            <div class="chat" id="chat"></div>
+          </div>
+          <div class="input-area">
+            <textarea
+              id="input"
+              placeholder="请输入问题..."
+              rows="3"
+            ></textarea>
+            <button id="voice" type="button">语音输入</button>
+            <button id="send" type="button">发送</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/main.js" type="module"></script>
+  </body>
+</html>
+
